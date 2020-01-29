@@ -13,7 +13,7 @@ public class RockCalculator {
 	public RockCalculator(double amountInTons, String type, double areaInFeet) {
 		super();
 		this.amountInTons = amountInTons;
-		
+
 		this.areaInFeet = areaInFeet;
 	}
 
@@ -26,8 +26,6 @@ public class RockCalculator {
 		this.amountInTons = amountInTons;
 	}
 
-
-
 	public double getAreaInFeet() {
 		return areaInFeet;
 	}
@@ -36,20 +34,26 @@ public class RockCalculator {
 		this.areaInFeet = areaInFeet;
 	}
 
-	
-	
 	@Override
 	public String toString() {
 		return "RockCalculator [amountInTons=" + amountInTons + "]";
 	}
 
-	public double rockMath(int areaInFeet){
-	
-		amountInTons = areaInFeet / 100;
-		
-		return amountInTons;
-		
-		}
-	
+	public double rockMath(int areaInFeet) {
 
+		amountInTons = areaInFeet / 100;
+
+		return amountInTons;
+
+	}
+
+	public boolean canWeHaul() {
+		boolean youCarry = false;
+		if (amountInTons >= 2) {
+			youCarry = true;
+
+		}
+		return youCarry;
+
+	}
 }

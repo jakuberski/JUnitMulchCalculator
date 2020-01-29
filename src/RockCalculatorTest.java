@@ -1,9 +1,12 @@
 
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import model.RockCalculator;
@@ -28,7 +31,7 @@ public class RockCalculatorTest {
 	@Test
     public void notNullFalseTest(){
         RockCalculator Null = new RockCalculator();
-        assertNull(Null.rockMath(1));
+        assertFalse(Null.canWeHaul());
     }
 	
 	

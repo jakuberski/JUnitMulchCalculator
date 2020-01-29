@@ -24,6 +24,12 @@ public class Calculator {
 		
 		System.out.println(coverage.toString());
 		
+		RockCalculator carry = new RockCalculator();
+		
+		carry.canWeHaul();
+		
+		System.out.println(carry.canWeHaul());
+		
 		
 		
 		
